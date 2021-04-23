@@ -11,3 +11,16 @@ fields =
     .x = The x component of the vector
     .y = The y component of the vector
     .z = The z component of the vector
+
+methods =
+    .toString = Returns a string representation of a vector v by calling String(v) or v.toString(). This method is useful for logging vectors in the console.
+    .set = Sets the x, y, and z component of the vector using two or three separate variables, the data from a <a href=\"#/p5.Vector\">p5.Vector</a>, or the values from a float array.
+    .copy = Gets a copy of the vector, returns a <a href="#/p5.Vector">p5.Vector</a> object.
+    .add = Adds x, y, and z components to a vector, adds one vector to another, or adds two independent vectors together. The version of the method that adds two vectors together is a static method and returns a <a href=\"#/p5.Vector\">p5.Vector</a>, the others acts directly on the vector. Additionally, you may provide arguments to this function as an array. See the examples for more context.
+    .rem = Gives remainder of a vector when it is divided by another vector. See examples for more context.
+    .sub = Subtracts x, y, and z components from a vector, subtracts one vector from another, or subtracts two independent vectors. The version of the method that subtracts two vectors is a static method and returns a <a href=\"#/p5.Vector\">p5.Vector</a>, the other acts directly on the vector. Additionally, you may provide arguments to this function as an array. See the examples for more context.
+    .mult = Multiplies the vector by a scalar, multiplies the x, y, and z components from a vector, or multiplies the x, y, and z components of two independent vectors. When multiplying a vector by a scalar, the x, y, and z components of the vector are all multiplied by the scalar. When multiplying a vector by a vector, the x, y, z components of both vectors are multiplied by each other (for example, with two vectors a and b: a.x * b.x, a.y * b.y, a.z * b.z). The static version of this method creates a new <a href=\"#/p5.Vector\">p5.Vector</a> while the non static version acts on the vector directly. Additionally, you may provide arguments to this function as an array. See the examples for more context.
+    .div = Divides the vector by a scalar, divides a vector by the x, y, and z arguments, or divides the x, y, and z components of two vectors against each other. When dividing a vector by a scalar, the x, y, and z components of the vector are all divided by the scalar. When dividing a vector by a vector, the x, y, z components of the source vector are treated as the dividend, and the x, y, z components of the argument is treated as the divisor (for example with two vectors a and b: a.x / b.x, a.y / b.y, a.z / b.z). The static version of this method creates a new <a href=\"#/p5.Vector\">p5.Vector</a> while the non static version acts on the vector directly. Additionally, you may provide arguments to this function as an array. See the examples for more context.
+
+
+
