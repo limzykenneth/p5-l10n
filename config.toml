@@ -1,0 +1,9 @@
+basepath = "."
+
+locales = [
+  "zh-CN",
+]
+
+[[paths]]
+	reference = "strings/en/strings.ftl"
+	l10n = "strings/{locale}/strings.ftl"
