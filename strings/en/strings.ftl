@@ -13,8 +13,16 @@ fields =
     .z = The z component of the vector
 
 methods =
-    .toString = Returns a string representation of a vector v by calling String(v) or v.toString(). This method is useful for logging vectors in the console.
-    .set = Sets the x, y, and z component of the vector using two or three separate variables, the data from a <a href=\"#/p5.Vector\">p5.Vector</a>, or the values from a float array.
+    .toString =
+        .description = Returns a string representation of a vector v by calling String(v) or v.toString(). This method is useful for logging vectors in the console.
+        .returns = String
+    .set =
+        .description = Sets the x, y, and z component of the vector using two or three separate variables, the data from a <a href=\"#/p5.Vector\">p5.Vector</a>, or the values from a float array.
+        .params =
+            .x = Number: (Optional) the x component of the vector
+            .y = Number: (Optional) the y component of the vector
+            .z = Number: (Optional) the z component of the vector
+            .value = p5.Vector|Number[]: the vector to set
     .copy = Gets a copy of the vector, returns a <a href="#/p5.Vector">p5.Vector</a> object.
     .add = Adds x, y, and z components to a vector, adds one vector to another, or adds two independent vectors together. The version of the method that adds two vectors together is a static method and returns a <a href=\"#/p5.Vector\">p5.Vector</a>, the others acts directly on the vector. Additionally, you may provide arguments to this function as an array. See the examples for more context.
     .rem = Gives remainder of a vector when it is divided by another vector. See examples for more context.
