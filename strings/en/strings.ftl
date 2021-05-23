@@ -133,20 +133,20 @@ dot =
             [x] {-number-type}: x component of the vector
             [y] {-number-type}: {-optional-parameter} y component of the vector
             [z] {-number-type}: {-optional-parameter} z component of the vector
-            [value] {-p5-vector-type}: value component of the vector or a <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
-            [v1] {-p5-vector-type}: the first <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
-            [v2] {-p5-vector-type}: the second <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+            [value] {-p5-vector-type}: value component of the vector or a <a href="#/p5.Vector">{-p5-vector-type}</a>
+            [v1] {-p5-vector-type}: the first <a href="#/p5.Vector">{-p5-vector-type}</a>
+            [v2] {-p5-vector-type}: the second <a href="#/p5.Vector">{-p5-vector-type}</a>
             *[other] {-empty-placeholder}
         }
 
 cross =
-    .description = Calculates and returns a vector composed of the cross product between two vectors. Both the static and non static methods return a new <a href=\"#/p5.Vector\">{-p5-vector-type}</a>. See the examples for more context.
-    .returns = {-p5-vector-type}: <a href=\"#/p5.Vector\">{-p5-vector-type}</a> composed of cross product
+    .description = Calculates and returns a vector composed of the cross product between two vectors. Both the static and non static methods return a new <a href="#/p5.Vector">{-p5-vector-type}</a>. See the examples for more context.
+    .returns = {-p5-vector-type}: <a href="#/p5.Vector">{-p5-vector-type}</a> composed of cross product
     .params =
         { $name ->
-            [v] {-p5-vector-type}: <a href=\"#/p5.Vector\">{-p5-vector-type}</a> to be crossed
-            [v1] {-p5-vector-type}: the first <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
-            [v2] {-p5-vector-type}: the second <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+            [v] {-p5-vector-type}: <a href="#/p5.Vector">{-p5-vector-type}</a> to be crossed
+            [v1] {-p5-vector-type}: the first <a href="#/p5.Vector">{-p5-vector-type}</a>
+            [v2] {-p5-vector-type}: the second <a href="#/p5.Vector">{-p5-vector-type}</a>
             *[other] {-empty-placeholder}
         }
 
@@ -155,15 +155,15 @@ dist =
     .returns = {-number-type}: the distance
     .params =
         { $name ->
-            [v] {-p5-vector-type}: the x, y, and z coordinates of a <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
-            [v1] {-p5-vector-type}: the first <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
-            [v2] {-p5-vector-type}: the second <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+            [v] {-p5-vector-type}: the x, y, and z coordinates of a <a href="#/p5.Vector">{-p5-vector-type}</a>
+            [v1] {-p5-vector-type}: the first <a href="#/p5.Vector">{-p5-vector-type}</a>
+            [v2] {-p5-vector-type}: the second <a href="#/p5.Vector">{-p5-vector-type}</a>
             *[other] {-empty-placeholder}
         }
 
 normalize =
     .description = Normalize the vector to length 1 (make it a unit vector).
-    .returns = {-p5-vector-type}: normalized <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+    .returns = {-p5-vector-type}: normalized <a href="#/p5.Vector">{-p5-vector-type}</a>
     .params =
         { $name ->
             [v] {-p5-vector-type}: the vector to normalize
@@ -188,7 +188,7 @@ setMag =
         }
 
 heading =
-    .description = Calculate the angle of rotation for this vector(only 2D vectors). p5.Vectors created using <a src=\"#/p5/createVector\">createVector()</a> will take the current <a = src=\"#/p5/angleMode\">angleMode</a> into consideration, and give the angle in radians or degree accordingly.
+    .description = Calculate the angle of rotation for this vector(only 2D vectors). p5.Vectors created using <a href="#/p5/createVector">createVector()</a> will take the current <a href="#/p5/angleMode">angleMode</a> into consideration, and give the angle in radians or degree accordingly.
     .returns = {-number-type}: the angle of rotation
 
 setHeading =
@@ -214,7 +214,7 @@ angleBetween =
     .returns = {-number-type}: the angle between (in radians)
     .params =
         { $name ->
-            [value] {-p5-vector-type}: the x, y, and z components of a <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+            [value] {-p5-vector-type}: the x, y, and z components of a <a href="#/p5.Vector">{-p5-vector-type}</a>
             *[other] {-empty-placeholder}
         }
 
@@ -226,7 +226,7 @@ lerp =
             [y] {-number-type}: the x component
             [z] {-number-type}: the x component
             [amt] {-number-type}: the amount of interpolation; some value between 0.0  (old vector) and 1.0 (new vector). 0.9 is very near  the new vector. 0.5 is halfway in between.
-            [v] {-p5-vector-type}: the <a href=\"#/p5.Vector\">{-p5-vector-type}</a> to lerp to
+            [v] {-p5-vector-type}: the <a href="#/p5.Vector">{-p5-vector-type}</a> to lerp to
             [v1] {-p5-vector-type}
             [v2] {-p5-vector-type}
             [v2] {-p5-vector-type}: {-optional-parameter} the vector to receive the result {-optional-parameter}
@@ -237,16 +237,16 @@ reflect =
     .description = Reflect the incoming vector about a normal to a line in 2D, or about a normal to a plane in 3D This method acts on the vector directly
     .params =
         { $name ->
-            [surfaceNormal] {-p5-vector-type}: the <a href=\"#/p5.Vector\">{-p5-vector-type}</a> to reflect about, will be normalized by this method
+            [surfaceNormal] {-p5-vector-type}: the <a href="#/p5.Vector">{-p5-vector-type}</a> to reflect about, will be normalized by this method
             *[other] {-empty-placeholder}
         }
 
 array =
-    .description = Return a representation of this vector as a float array. This is only for temporary use. If used in any other fashion, the contents should be copied by using the <b>p5.Vector.<a href=\"#/p5.Vector/copy\">copy()</a></b> method to copy into your own array.
+    .description = Return a representation of this vector as a float array. This is only for temporary use. If used in any other fashion, the contents should be copied by using the <b>p5.Vector.<a href="#/p5.Vector/copy">copy()</a></b> method to copy into your own array.
     .returns = {-number-type}[]: an Array with the 3 values
 
 equals =
-    .description = Equality check against a <a href=\"#/p5.Vector\">{-p5-vector-type}</a>
+    .description = Equality check against a <a href="#/p5.Vector">{-p5-vector-type}</a>
     .returns = {-boolean-type}: whether the vectors are equals
     .params =
         { $name ->
@@ -259,17 +259,17 @@ equals =
 
 fromAngle =
     .description = Make a new 2D vector from an angle
-    .returns = {-p5-vector-type}: the new <a href=\"#/p5.Vector\">{-p5-vector-type}</a> object
+    .returns = {-p5-vector-type}: the new <a href="#/p5.Vector">{-p5-vector-type}</a> object
     .params =
         { $name ->
-            [angle] {-number-type}: the desired angle, in radians (unaffected by <a href=\"#/p5/angleMode\">angleMode</a>)
+            [angle] {-number-type}: the desired angle, in radians (unaffected by <a href="#/p5/angleMode">angleMode</a>)
             [length] {-number-type}: {-optional-parameter} the length of the new vector (defaults to 1)
             *[other] {-empty-placeholder}
         }
 
 fromAngles =
     .description = Make a new 3D vector from a pair of ISO spherical angles
-    .returns = {-p5-vector-type}: the new <a href=\"#/p5.Vector\">{-p5-vector-type}</a> object
+    .returns = {-p5-vector-type}: the new <a href="#/p5.Vector">{-p5-vector-type}</a> object
     .params =
         { $name ->
             [theta] {-number-type}: the polar angle, in radians (zero is up)
@@ -280,8 +280,8 @@ fromAngles =
 
 random2D =
     .description = Make a new 2D unit vector from a random angle
-    .returns = {-p5-vector-type}: the new <a href=\"#/p5.Vector\">{-p5-vector-type}</a> object
+    .returns = {-p5-vector-type}: the new <a href="#/p5.Vector">{-p5-vector-type}</a> object
 
 random2D =
     .description = Make a new random 3D unit vector.
-    .returns = {-p5-vector-type}: the new <a href=\"#/p5.Vector\">{-p5-vector-type}</a> object
+    .returns = {-p5-vector-type}: the new <a href="#/p5.Vector">{-p5-vector-type}</a> object
